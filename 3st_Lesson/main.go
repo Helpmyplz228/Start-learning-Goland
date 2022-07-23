@@ -24,7 +24,7 @@ func (u *User) setNewName(newName string) {
 }
 
 func home_page(w http.ResponseWriter, r *http.Request) {
-	Bob := User{"Bob", 25, -50, 4.2, 0.8, []string{"Futball", "Skate", "Dancwe"}}
+	Bob := User{"Bob", 20, -50, 4.2, 0.8, []string{"Futball", "Skate", "Dancwe"}}
 	tmpl, _ := template.ParseFiles("templates/home_page.html")
 	tmpl.Execute(w, Bob)
 }
