@@ -5,11 +5,14 @@
 <main class="px-3">
     <h1>Форма добавления статьи</h1>
 
-    <form action="/save_article" method="post">
-        <input type="text" name="title" id="title" placeholder="Введите название статьи" сlass="form-control"><br>
-        <textarea name="anons" id="anons" сlass="form-control" placeholder="Введите анонс статьи"></textarea><br>
-        <textarea name="full_text" id="full_text" сlass="form-control" placeholder="Введите текст статьи"></textarea><br>
-        <button сlass="btn btn-warning">Добавить</button>
+    <form action="/save_article/" method="post">
+        <div class="mb-3 row"><input type="text" name="title" id="title" placeholder="Введите название статьи" class="form-control"></div>
+
+        <div class="mb-3 row"> <textarea name="anons" id="anons" class="form-control" placeholder="Введите анонс статьи"></textarea></div>
+
+      <div class="mb-3 row"> <textarea name="full_text" id="full_text" class="form-control" placeholder="Введите текст статьи"></textarea></div>
+
+      <button class="btn btn-warning">Добавить</button>
     </form>   
 </main>
 
@@ -18,3 +21,4 @@
           {{ end }}
         
          
+    
